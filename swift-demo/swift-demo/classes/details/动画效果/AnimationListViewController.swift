@@ -20,7 +20,7 @@ class AnimationListViewController: UIViewController ,UITableViewDelegate,UITable
         tableView.tableFooterView = UIView()
         self.view.addSubview(tableView)
         
-        listArray = ["画圆","画矩形"]
+        listArray = ["画基本图形","画矩形"]
     }
 
     /**

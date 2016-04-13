@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A6316A551CBE04F50010577D /* ZWAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6316A541CBE04F50010577D /* ZWAnimationView.swift */; };
 		A64C66251CBCC2A100CC02E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64C66241CBCC2A100CC02E7 /* AppDelegate.swift */; };
 		A64C662A1CBCC2A100CC02E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A64C66281CBCC2A100CC02E7 /* Main.storyboard */; };
 		A64C662C1CBCC2A100CC02E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A64C662B1CBCC2A100CC02E7 /* Assets.xcassets */; };
@@ -54,6 +55,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A6316A541CBE04F50010577D /* ZWAnimationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZWAnimationView.swift; sourceTree = "<group>"; };
 		A64C66211CBCC2A100CC02E7 /* swift-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A64C66241CBCC2A100CC02E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A64C66291CBCC2A100CC02E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -132,6 +134,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A6316A531CBE04C80010577D /* views */ = {
+			isa = PBXGroup;
+			children = (
+				A6316A541CBE04F50010577D /* ZWAnimationView.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
 		A64C66181CBCC2A100CC02E7 = {
 			isa = PBXGroup;
 			children = (
@@ -279,6 +289,7 @@
 		A6C7C6261CBD51ED007D2EB6 /* 动画效果 */ = {
 			isa = PBXGroup;
 			children = (
+				A6316A531CBE04C80010577D /* views */,
 				A6C7C6271CBD5221007D2EB6 /* AnimationListViewController.swift */,
 				A6C7C6291CBD52CF007D2EB6 /* DrawCircleViewController.swift */,
 			);
@@ -422,6 +433,7 @@
 				A64C66841CBCE4FA00CC02E7 /* SDWebImageManager.m in Sources */,
 				A64C66891CBCE4FA00CC02E7 /* UIImageView+HighlightedWebCache.m in Sources */,
 				A64C66821CBCE4FA00CC02E7 /* SDWebImageDownloader.m in Sources */,
+				A6316A551CBE04F50010577D /* ZWAnimationView.swift in Sources */,
 				A64C668A1CBCE4FA00CC02E7 /* UIImageView+WebCache.m in Sources */,
 				A64C667F1CBCE4FA00CC02E7 /* SDImageCache.m in Sources */,
 				A64C66931CBCE60200CC02E7 /* YLImageView.m in Sources */,
