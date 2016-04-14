@@ -20,7 +20,7 @@ class ShapeAndBezierPathViewController: UIViewController ,UITableViewDelegate,UI
         tableView.tableFooterView = UIView()
         self.view.addSubview(tableView)
         
-        dataArray = ["CAShaperLayer画矩形","UIBezierPath画矩形","CAShaperLayer画圆","UIBezierPath画圆","画曲线","画波浪曲线"]
+        dataArray = ["CAShaperLayer画矩形","UIBezierPath画矩形","CAShaperLayer画圆","UIBezierPath画圆","画曲线","画波浪曲线","画虚线圆","画虚线直线"]
     }
 
     /**
@@ -73,7 +73,14 @@ class ShapeAndBezierPathViewController: UIViewController ,UITableViewDelegate,UI
             vc.layerType = LayerType.LayerType_CirRound_Double
             self.navigationController?.pushViewController(vc, animated: true)
             break
-
+        case 6:
+            vc.layerType = LayerType.LayerType_XuXian_Circle
+            self.navigationController?.pushViewController(vc, animated: true)
+            break
+        case 7:
+            vc.layerType = LayerType.LayerType_XuXian_Line
+            self.navigationController?.pushViewController(vc, animated: true)
+            break
         default:
             break
         }

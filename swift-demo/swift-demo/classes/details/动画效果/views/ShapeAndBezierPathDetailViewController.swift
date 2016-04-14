@@ -14,6 +14,8 @@ enum LayerType{
   case LayerType_BezierPath_Circle
   case LayerType_CirRound
   case LayerType_CirRound_Double
+  case LayerType_XuXian_Circle
+  case LayerType_XuXian_Line
 }
 class ShapeAndBezierPathDetailViewController: UIViewController {
 
@@ -24,6 +26,7 @@ class ShapeAndBezierPathDetailViewController: UIViewController {
         
         switch layerType!{
             case .LayerType_Shapelayer_Rect:
+                self.title = "利用Shapelayer画矩形"
                 //利用CAShapeLayer
                 let layer = CAShapeLayer()
                 layer.frame = CGRectMake(100, 100, 100, 120)
@@ -34,6 +37,7 @@ class ShapeAndBezierPathDetailViewController: UIViewController {
                 view.layer.addSublayer(layer)
             break
         case .LayerType_BezierPath_Rect:
+            self.title = "利用BezierPath画矩形"
             //利用CAShapeLayer
             let path = UIBezierPath(rect: CGRectMake(100, 100, 150, 120))
             let layer = CAShapeLayer()
@@ -45,6 +49,7 @@ class ShapeAndBezierPathDetailViewController: UIViewController {
             view.layer.addSublayer(layer)
             break
             case .LayerType_Shapelayer_Circle:
+                 self.title = "利用Shapelayer画圆形"
                 let path = UIBezierPath(roundedRect: CGRectMake(100, 150, 100, 100), cornerRadius: 50)
                 let layer = CAShapeLayer()
                 layer.path = path.CGPath
@@ -53,6 +58,7 @@ class ShapeAndBezierPathDetailViewController: UIViewController {
                 view.layer.addSublayer(layer)
              break
             case .LayerType_BezierPath_Circle:
+                 self.title = "利用BezierPath画圆形"
                 let radius:CGFloat = 60.0
                 let startAngle:CGFloat = 0.0
                 let endAngle:CGFloat = CGFloat(M_PI * 2)
@@ -64,6 +70,7 @@ class ShapeAndBezierPathDetailViewController: UIViewController {
                 view.layer.addSublayer(layer)
             break
             case .LayerType_CirRound:
+                  self.title = "画曲线"
                 let startPoint = CGPointMake(50, 300)
                 let endPoint = CGPointMake(300, 300)
                 let countrolPoint = CGPointMake(170, 100)
@@ -98,6 +105,7 @@ class ShapeAndBezierPathDetailViewController: UIViewController {
                 
             break
             case .LayerType_CirRound_Double:
+                self.title = "画波浪线"
                 let startPoint=CGPointMake(50, 300)
                 let endPoint=CGPointMake(300, 300)
                 let controlPoint1=CGPointMake(120, 180)
@@ -133,6 +141,41 @@ class ShapeAndBezierPathDetailViewController: UIViewController {
                 view.layer.addSublayer(layer2)
                 view.layer.addSublayer(layer3)
                 view.layer.addSublayer(layer4)
+            break
+            
+          case .LayerType_XuXian_Circle:
+            self.title = "画虚线"
+            //画虚线
+             let dotteShapLayer = CAShapeLayer()
+             let mdotteShapePath = CGPathCreateMutable()
+             dotteShapLayer.fillColor = UIColor.clearColor().CGColor
+             dotteShapLayer.strokeColor = UIColor.orangeColor().CGColor
+             dotteShapLayer.lineWidth = 2.0
+             CGPathAddEllipseInRect(mdotteShapePath, nil, CGRectMake(100.0, 150.0, 200.0, 200.0))
+             dotteShapLayer.path = mdotteShapePath
+             let arr :NSArray = NSArray(array: [10,5])
+             dotteShapLayer.lineDashPhase = 1.0
+             dotteShapLayer.lineDashPattern = arr as? [NSNumber]
+             view.layer.addSublayer(dotteShapLayer)
+             
+            break
+            
+            case .LayerType_XuXian_Line:
+                 self.title = "画虚线直线"
+                //画虚线
+                let dotteShapLayer = CAShapeLayer()
+                let mdotteShapePath = CGPathCreateMutable()
+                dotteShapLayer.fillColor = UIColor.clearColor().CGColor
+                dotteShapLayer.strokeColor = UIColor.orangeColor().CGColor
+                dotteShapLayer.lineWidth = 2.0
+                CGPathMoveToPoint(mdotteShapePath, nil, 20, 100)
+                CGPathAddLineToPoint(mdotteShapePath, nil, 20, 200)
+                CGPathAddLineToPoint(mdotteShapePath, nil, 200, 200)
+                dotteShapLayer.path = mdotteShapePath
+                let arr :NSArray = NSArray(array: [10,5])
+                dotteShapLayer.lineDashPhase = 1.0
+                dotteShapLayer.lineDashPattern = arr as? [NSNumber]
+                view.layer.addSublayer(dotteShapLayer)
             break
             default:
             break
