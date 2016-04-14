@@ -33,6 +33,8 @@
 		A64C668B1CBCE4FA00CC02E7 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A64C667D1CBCE4FA00CC02E7 /* UIView+WebCacheOperation.m */; };
 		A64C66921CBCE60200CC02E7 /* YLGIFImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A64C668F1CBCE60200CC02E7 /* YLGIFImage.m */; };
 		A64C66931CBCE60200CC02E7 /* YLImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = A64C66911CBCE60200CC02E7 /* YLImageView.m */; };
+		A68B27F81CBF9556006B2FBA /* ShapeAndBezierPathViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68B27F71CBF9556006B2FBA /* ShapeAndBezierPathViewController.swift */; };
+		A68B27FA1CBF96C1006B2FBA /* ShapeAndBezierPathDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68B27F91CBF96C1006B2FBA /* ShapeAndBezierPathDetailViewController.swift */; };
 		A6C7C6281CBD5221007D2EB6 /* AnimationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C7C6271CBD5221007D2EB6 /* AnimationListViewController.swift */; };
 		A6C7C62A1CBD52CF007D2EB6 /* DrawCircleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C7C6291CBD52CF007D2EB6 /* DrawCircleViewController.swift */; };
 /* End PBXBuildFile section */
@@ -105,6 +107,8 @@
 		A64C668F1CBCE60200CC02E7 /* YLGIFImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLGIFImage.m; sourceTree = "<group>"; };
 		A64C66901CBCE60200CC02E7 /* YLImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLImageView.h; sourceTree = "<group>"; };
 		A64C66911CBCE60200CC02E7 /* YLImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLImageView.m; sourceTree = "<group>"; };
+		A68B27F71CBF9556006B2FBA /* ShapeAndBezierPathViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapeAndBezierPathViewController.swift; sourceTree = "<group>"; };
+		A68B27F91CBF96C1006B2FBA /* ShapeAndBezierPathDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShapeAndBezierPathDetailViewController.swift; path = views/ShapeAndBezierPathDetailViewController.swift; sourceTree = "<group>"; };
 		A6C7C6271CBD5221007D2EB6 /* AnimationListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationListViewController.swift; sourceTree = "<group>"; };
 		A6C7C6291CBD52CF007D2EB6 /* DrawCircleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawCircleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -292,6 +296,8 @@
 				A6316A531CBE04C80010577D /* views */,
 				A6C7C6271CBD5221007D2EB6 /* AnimationListViewController.swift */,
 				A6C7C6291CBD52CF007D2EB6 /* DrawCircleViewController.swift */,
+				A68B27F71CBF9556006B2FBA /* ShapeAndBezierPathViewController.swift */,
+				A68B27F91CBF96C1006B2FBA /* ShapeAndBezierPathDetailViewController.swift */,
 			);
 			path = "动画效果";
 			sourceTree = "<group>";
@@ -437,6 +443,7 @@
 				A64C668A1CBCE4FA00CC02E7 /* UIImageView+WebCache.m in Sources */,
 				A64C667F1CBCE4FA00CC02E7 /* SDImageCache.m in Sources */,
 				A64C66931CBCE60200CC02E7 /* YLImageView.m in Sources */,
+				A68B27F81CBF9556006B2FBA /* ShapeAndBezierPathViewController.swift in Sources */,
 				A64C665B1CBCD28000CC02E7 /* EasyScrollViewController.swift in Sources */,
 				A64C66251CBCC2A100CC02E7 /* AppDelegate.swift in Sources */,
 				A64C66811CBCE4FA00CC02E7 /* SDWebImageDecoder.m in Sources */,
@@ -450,6 +457,7 @@
 				A64C66871CBCE4FA00CC02E7 /* UIImage+GIF.m in Sources */,
 				A64C668B1CBCE4FA00CC02E7 /* UIView+WebCacheOperation.m in Sources */,
 				A64C665E1CBCD2D900CC02E7 /* EasyScrollView.swift in Sources */,
+				A68B27FA1CBF96C1006B2FBA /* ShapeAndBezierPathDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
